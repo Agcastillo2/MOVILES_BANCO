@@ -89,4 +89,11 @@ public class Payment {
         this.status = status;
     }
 
+    public PaymentTransaction getPaymentTransactions() {
+        return paymentTransactions;
+    }
+
+    public void setPaymentTransactions(PaymentTransaction paymentTransactions) {
+        this.paymentTransactions = paymentTransactions;
+    }
 }
