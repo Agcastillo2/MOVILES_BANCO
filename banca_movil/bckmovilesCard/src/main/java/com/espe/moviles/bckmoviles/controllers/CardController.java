@@ -55,4 +55,10 @@ public class CardController {
         boolean exists = cardService.existsByCardNumber(cardNumber);
         return new ResponseEntity<>(exists, HttpStatus.OK);
     }
+
+    @PostMapping("/{cardNumber}/balance")
+    public ResponseEntity<Card> updateBalance(@PathVariable String cardNumber, @RequestParam Double amount) {
+        Card updatedCard = cardService.updateBalance(cardNumber, amount);
+        return ResponseEntity.ok(updatedCard);
+    }
 }

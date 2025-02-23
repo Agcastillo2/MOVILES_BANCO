@@ -12,4 +12,6 @@ public interface CardService {
     void deleteCard(Long id);
     boolean existsByCardNumber(String cardNumber);
 
+    Card updateBalance(String cardNumber, Double amount);
+
 }

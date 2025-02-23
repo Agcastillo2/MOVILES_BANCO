@@ -51,12 +51,32 @@ public class Transaction {
         PENDING, COMPLETED, FAILED, CANCELLED
     }
 
+    private String userCardTrans;
+
+    private String addresseeCardTrans;
+
     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getUserCardTrans() {
+        return userCardTrans;
+    }
+
+    public void setUserCardTrans(String userCardTrans) {
+        this.userCardTrans = userCardTrans;
+    }
+
+    public String getAddresseeCardTrans() {
+        return addresseeCardTrans;
+    }
+
+    public void setAddresseeCardTrans(String addresseeCardTrans) {
+        this.addresseeCardTrans = addresseeCardTrans;
     }
 
     public @NotNull(message = "El monto es obligatorio") @DecimalMin(value = "0.01", message = "El monto debe ser mayor que 0") Double getAmount() {
