@@ -11,7 +11,11 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
         </processorPath>
+        <module name="bckmovilesPayment" />
         <module name="bckmovilesCard" />
+        <module name="bckmovilesNotification" />
+        <module name="bckmovilesUser" />
+        <module name="bckmovilesTransaction" />
       </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -19,18 +23,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ApiGatewayApplication" />
         <module name="EurekaServerApplication" />
-      </profile>
-      <profile name="Annotation profile for bckmovilesNotification" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
-        </processorPath>
-        <module name="bckmovilesPayment" />
-        <module name="bckmovilesNotification" />
-        <module name="bckmovilesUser" />
-        <module name="bckmovilesTransaction" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,6 +1,7 @@
 package com.espe.moviles.bckmoviles.services;
 
 import com.espe.moviles.bckmoviles.models.Card;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
